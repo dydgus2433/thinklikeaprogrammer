@@ -51,7 +51,7 @@ public class gcdlcm {
 				continue;
 			}else {
 				
-				if((temp1 % cnt != 0 || temp2 % cnt != 0) && (cnt > temp1  || cnt > temp2) ) {
+				if((cnt > temp1  || cnt > temp2) ) {
 					arr3.add(temp1);
 					arr3.add(temp2);
 					break;
