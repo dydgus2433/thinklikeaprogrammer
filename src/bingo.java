@@ -40,6 +40,9 @@ public class bingo {
 				for(int j =0; j < 5; j++) {
 					if(arr[i][j] == answer[k]) {
 						arr[i][j] = 0;
+						if(k < 5) {
+							break;
+						}
 						int temp = 0;
 						int temp1 = 0;
 						int temp2 = 0;
