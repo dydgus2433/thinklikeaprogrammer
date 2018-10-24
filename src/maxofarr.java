@@ -33,7 +33,7 @@ public class maxofarr {
 			}
 		}
 		System.out.println(max);
-		System.out.println(x + " "+y);
+		System.out.println((x+1) + " "+(y+1));
 		
 	}
 
