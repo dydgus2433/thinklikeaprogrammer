@@ -23,19 +23,19 @@ public class attackrange {
 				
 				//x - 2 , y  ---> x , y+ 2
 				if( (x-i+j >= 0 && x-i+j < size) && (y+j >= 0 && y+j < size) ) {
-					arr[x- range +j][y+j] = i;
+					arr[x- i +j][y+j] = i;
 				}
 				//x , y - 2 ----> x +2 , y 
 				if((x+j >= 0 && x+j < size) &&(y-i+j >= 0 && y-i+j < size) ) {
 					arr[x+ j][y-i+j] = i;
 				}
-				//x , y - 2 ----> x -2, y 
-				if((x-i+j >= 0 && x+i-j < size) &&(y+j >= 0 && y+j < size) ) {
+//				//x , y - 2 ----> x -2, y 
+				if((x+i-j >= 0 && x+i-j < size) &&(y+j >= 0 && y+j < size) ) {
 					arr[x+i-j][y+j] = i ;
 				}
-				
-				
-				//x + 2, y ---? x , y + 2
+//				
+//				
+//				//x + 2, y ---? x , y + 2
 				if((x-j >= 0 && x-j < size) &&(y-i+j >= 0 && y-i+j < size )) {
 					arr[x-j][y-i+j] = i;			
 				}
